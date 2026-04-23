@@ -64,9 +64,8 @@ class _HoursInputFieldState extends ConsumerState<HoursInputField> {
       widget.element[widget.field.key] = null;
       return;
     }
-    
-    final oldHours = widget.element[widget.field.key];    
-    if (oldHours != hours) {
+
+    if (widget.element[widget.field.key] != hours) {
       widget.element.check(widget.field.key);
       widget.element[widget.field.key] = hours;
     }
